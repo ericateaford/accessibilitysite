@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/main.scss">
+</head>
+<body>
+
+        <header class="p-3">
+            <div class="f-flex flex-md-row flex-column align-content-center mb-3 border-bottom text-center">
+    
+                <span id="pageTitle" class="fs-4 text-primary me-md-auto mb-3">Erica T Accessibility Site</span>
+                <ul>
+                    <nav class="nav nav-pills mb-3 d-flex flex-column flex-md-row" aria-label="Main Navigation">
+                      <li  class="hover nav-link text-secondary p-2 flex-sm-fill text-center"><a href="index.html">Home </a></li>
+                      <li  class="btn hover nav-link text-primary p-2 flex-sm-fill text-center"><a href="plainlang.html">Plain Language</a></li>
+                      <li  class="btn hover nav-link text-primary p-2 flex-sm-fill text-center"><a href="aboutme.html">About Me</a></li>
+                      <li class="btn hover nav-link text-primary p-2 flex-sm-fill text-center active" aria-current="page"> <a href="form.html" style="color: black;">Contact Me</a></li>
+                      <li  class="hover nav-link text-secondary p-2 flex-sm-fill text-center"><a href="strucdesign.html">Site Design </a></li>
+                    </nav>
+              </ul>
+                </div>
+             
+          </header>
+
+<main class="container mt-4">
+    <div class="formContainer">
+    <h2 class="text-center" style="color: #32363d;">Get In Touch</h2>
+    <p>Have Questions? Use the form below to contact me. </p>
+
+
+<form>
+<label for="fullname">Full Name</label> <br>
+<input type="text" name="fullname" id="fullname" class="form-control" required aria-required="true"> <br>
+<label for="email" class="form-label">Email</label>
+<input type="email" name="email" id="email" class="form-control" required aria-required="true" aria-describedby="emailHelp">
+<div id="emailHelp">Your information will never be shared with anyone.</div> <br>
+
+<label for="reason" class="form-label">Reason for Contacting:</label>
+<select id="reason" name="reason" class="form-select" require>
+    <option value="">Please Select:</option>
+    <option value="sayHello">Please Select:</option>
+    <option value="collab">I want to collaborate</option>
+    <option value="feedback">I have some feedback</option>
+    <option value="bug">I found a bug/issue</option>
+</select>
+
+<label for="subject" class="form-label">Subject</label>
+<input type="text" name="subject" id="subject" class="form-control">
+
+<label for="message" class="form-label">Message Content</label><br>
+<textarea name="message" id="message" class="form-control" rows="10"></textarea>
+
+
+</form>
+
+</div>
+</main>
+<footer class="pt-4 my-md-5 border-top text-center">&copy; All Rights Reserved - 2023 Teaford</footer>
+</body>
+</html>

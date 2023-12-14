@@ -1,0 +1,104 @@
+//Variables
+
+$primary: #C3B0AC;
+$secondary: #0c2d1c;
+$mainColor: #24292D;
+$box-shadow: .5rem .5rem 1rem rgb($mainColor, .65);
+
+$headings-font-family: 'Poppins';
+$headings-font-weight: 700;
+$headings-color: $mainColor;
+$nav-pills-link-active-color: $mainColor;
+
+$lightGray: #D3BEBC;
+$lightYellow: #99bca8;
+$secondYellow: #d0d9d4;
+$darkGrey: #0c2d1c; 
+
+
+//import bootstrap
+
+@import "bootstrap"; 
+
+
+//start the colorization
+
+html {
+    box-sizing: border-box; 
+    font-family: 'Trebuchet MS', sans-serif;
+   
+}
+
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: $lightYellow;
+    color: #424242;
+   
+}
+
+header {
+    background-color: $darkGrey;
+    color: $primary;
+}
+
+p {
+       color: $mainColor; 
+}
+
+h1, #pageTitle{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+}
+
+
+div > h2{
+    color: $mainColor;
+}
+
+.blockquote{
+    font-family: 'Trebuchet', cursive;
+    font-size: 1.7rem;
+}
+
+.btn-cta {
+    @include button-variant(lighten($primary, 30%), $primary);
+    box-shadow: 3px 3px 5px $primary;
+}
+
+.hover:hover, .hover:focus {
+    background-color: darkslategray;
+}
+ 
+
+.mains {
+    padding: 70px 20px;
+}
+
+.disabilityAmerica {
+    background-color: $secondYellow;   
+   
+
+}
+
+.formContainer {
+    margin: 75px 50px;
+    border-style: solid;
+    border-color:#d0d9d4;
+    background-color: $secondYellow;
+    box-shadow: 5px 5px 5px darkslategray;
+    border-radius: 10px;
+    padding: 50px 80px;
+}
+
+image {
+    width: 40px;
+    height: 40px;
+}
+
+.statement {
+    background-color: $secondYellow;
+}

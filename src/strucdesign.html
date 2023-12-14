@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Design</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+<body>
+
+    <header class="p-3">
+        <div class="d-flex flex-md-row flex-column align-content-center mb-3 border-bottom text-center">
+    
+          <span id="pageTitle" class="fs-4 text-primary me-md-auto mb-3">Erica R Accessibility Website</span>
+    
+          
+          <ul>
+            <nav class="nav nav-pills mb-3 d-flex flex-column flex-md-row" aria-label="Main Navigation">
+              <li  class="hover nav-link text-secondary p-2 flex-sm-fill text-center"><a href="index.html">Home </a></li>
+              <li  class="btn hover nav-link text-primary p-2 flex-sm-fill text-center"><a href="plainlang.html">Plain Language</a></li>
+              <li  class="btn hover nav-link text-primary p-2 flex-sm-fill text-center"><a href="aboutme.html">About Me</a></li>
+              <li class="btn hover nav-link text-primary p-2 flex-sm-fill text-center"> <a href="form.html">Contact Me</a></li>
+              <li  class="hover nav-link text-secondary p-2 flex-sm-fill text-center active" aria-current="page"><a href="strucdesign.html" style="color: black;">Site Design </a></li>
+            </nav>
+      </ul>
+    </div>
+    </header>
+
+
+
+    <article aria-labelledby="articleHeader">
+        <div class="p-5" style="background-color: #d0d9d4;">
+        <h1 class="text-center">Site Design</h1>
+        <p class="p-4">In this section of my site, I will be going over the visual and structural design of my Accessibility
+            webpage so that you can gain a broader understanding of the implemented elements I decided to put into this webpage. 
+            Also so you can understand the specific elements I implemented and how they are associated with accessibility.
+        </p>
+    </div>
+
+
+        <div class="p-5">
+        <h2 class="">Visual Design</h2>
+        <h3 class="">Color of Site</h3>
+        <p class="">The color scheme I chose for my site is a calming green scheme with light grays, greens, and tans
+            but also with dark greens and grays. I first came up this color scheme after filing through some
+        recommended schemes online. Although I knew I wanted it, I had to make sure that it was WCAG Level AA compliant. 
+        </p>
+        
+        <p>I used webaim.com so check to make sure that my color scheme was at least 4.5:1 contrast ratio. The background color 
+        of the html(#99bca8- a light green) with the overlapping text(#32363d- a dark grey) came to a 5.84:1 contrast ratio which passes Level AA. I knew I 
+        didn't want to just stop at Level so I decided to use the program to create a color scheme that would pass Level AAA as well. 
+        I settled with a the sae background color(#99bca8) but I increased the darkness of the text color(#24292d) this gave
+        me a 7.07:1 contrast level which complied to Level AAA.  </p>
+
+        <p> Next, I wanted to make sure that my navigation bar exceeded Level AA as well. My original color of the navigation bar was 
+            #0c2d1c whihc game me a dark green. The text on the top was a light tan(#b79e9b). With this 
+            scheme I still passed Level AA with a 5.95:1 ratio, but of course I wanted to pass Level AAA as well. 
+            I kept my background color but adjusted the lightness of my text on the navigation bar to #C3BOAC. This 
+            shot me up to a 7.19:1 contrast ratio which passed Level AAA.
+        </p>
+
+        <h3 class="">Typography</h3>
+        <p class=""> For my typography I wanted something simple to read and to see so that anyone can view
+            my website and the content it has. To acheive this I chose the font family, "'Trebuchet MS', sans-serif". 
+            This gave my typography a large and blocky text that made it easy for anyone to see the content. 
+        </p>
+
+        <h3 class="">Layout</h3>
+        <p class="">In the layout of my site I wanted to make it easy to navigate and see different elements
+            on the webpage. As you can see on all of my page I used distinct padding in between each section 
+        of content. I also used some lighter colored backgrounds on some elements on the homepage in order to 
+        make it contrast the following sections so it's easier to tell where you are on the page. On multiple pages of the site 
+        I also used flexbox with my bootstrap in order to put elements side by side in my layout. For example, I put 
+        one of my chart next to the description, this will allow users to easily compare the data in the chart to the text they are reading
+        instead of needing to scroll down the page in order to view the chart. </p>
+
+        <h3 class="">Navigation</h3>
+        <p class="">In the navigation of the webpage I wanted to make sure that every user will be able to see what was the 
+            active page that they were on. I did this by choosing the light tan again(#C3BOAC) and then I changed the text of the 
+            link to black so that it stands out against it's background. I also made sure to add a hover psuedo class color 
+            so that every time a user is hovering over a tab on the navigation, it will become a lighter green. 
+        </p>
+    </div>
+
+
+        <div class="p-5">
+        <h2 class="">Structural Design</h2>
+       
+        <h3 class="">Hierarchy</h3> 
+        <p class="">The hierachy of my site is as follows: Home, About Me, Site Design, Plain Language, Contact Me.
+            I chose this specfic navigation order because I wanted to showcase the most important topics about me and the work I 
+            do in this webpage first, and then end with a way to contact me if you want to collaborate or have questions. 
+            The titles of the navigation's tabs are simple and straightforward, so that user's know exactly what the page will 
+            be about before they click on the page. 
+        </p>
+
+        <h3 class="">Sequential Model</h3>
+        <p class="">When it comes to the structural design of my webpage, I chose a sequential model in order to showcase the important work first.
+            You can see this specifically on the homepage. In the first section there is a button that takes you to the About Me page. This is 
+        important because it will show first time users infromation about me. As you go down the page you will see cases of flexbox, two different types 
+        of tables, and a reference sheet. These items are very important to know when it comes to accessibility because of the knowledge you need to know in order
+        to effectively code the tables for screen readers. </p>
+    </div>
+    </article>
+
+
+
+
+    <footer class="pt-4 my-md-5 border-top text-center">&copy; All Rights Reserved - 2023 Teaford</footer>
+
+
+    <script type="module" src="./javascripts/main.js"></script> 
+</body>
+</html>
